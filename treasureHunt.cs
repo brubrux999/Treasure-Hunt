@@ -59,7 +59,7 @@ if (playerHealth <= 0 && isPlaying)
 {
     Console.WriteLine("");
     Console.WriteLine("You ran out of health. Game over!");
-    Console.WriteLine("Your final score: " + playerScore);
+    Console.WriteLine("You lose");
     isPlaying = false;
 }
 
@@ -123,7 +123,7 @@ if (playerHealth <= 0 && isPlaying)
 {
     Console.WriteLine("");
     Console.WriteLine("You ran out of health. Game over!");
-    Console.WriteLine("Your final score: " + playerScore);
+    Console.WriteLine("You lose");
     isPlaying = false;
 }
 
@@ -187,7 +187,7 @@ if (playerHealth <= 0 && isPlaying)
 {
     Console.WriteLine("");
     Console.WriteLine("You ran out of health. Game over!");
-    Console.WriteLine("Your final score: " + playerScore);
+    Console.WriteLine("You lose");
     isPlaying = false;
 }
 
@@ -250,7 +250,7 @@ if (playerHealth <= 0 && isPlaying)
 {
     Console.WriteLine("");
     Console.WriteLine("You ran out of health. Game over!");
-    Console.WriteLine("Your final score: " + playerScore);
+    Console.WriteLine("You lose");
     isPlaying = false;
 }
 
@@ -287,7 +287,7 @@ if (playerHealth > 0 && playerEnergy > 0 && isPlaying)
     if (playerLocation == "a" || playerLocation == "A")
     {
         Console.WriteLine("");
-        Console.WriteLine("At the top, you find another survivor's backpack.");
+        Console.WriteLine("At the top, you find another survivor's backpack");
         Console.WriteLine("As you go down the staircase broke");
         Console.WriteLine("You hurt yourself and break some of your items");
         Console.WriteLine("");
@@ -316,7 +316,7 @@ if (playerHealth <= 0 && isPlaying)
 {
     Console.WriteLine("");
     Console.WriteLine("You ran out of health. Game over!");
-    Console.WriteLine("Your final score: " + playerScore);
+    Console.WriteLine("You lose");
     isPlaying = false;
 }
 
@@ -325,17 +325,4 @@ if (playerEnergy <= 0 && isPlaying)
     Console.WriteLine("");
     Console.WriteLine("You ran out of energy. Game over!");
     Console.WriteLine("Your final score: " + playerScore);
-    isPlaying = false;
-}
-
-if (isPlaying)
-{
-    Console.WriteLine("Keep searching? [y/n]");
-    input = Console.ReadLine();
-    if (input == "n")
-    {
-        isPlaying = false;
-        Console.WriteLine("Game over!");
-        Console.WriteLine("Your final score: " + playerScore);
-    }
 }
